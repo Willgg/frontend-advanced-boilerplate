@@ -1,10 +1,290 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: Stage AEH filière ECE avec MyMentor
 ---
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
-</div>
+<div class="scroll-menu">
+      <div class="container text-center">
+        <form action="https://formspree.io/infantino.tony@gmail.com" method="post" class="form-inline">
+          <div class="form-group">
+            <label class="sr-only" for="phone">Téléphone</label>
+            <input type="text" class="form-control input-lg" name="phone" placeholder="n° téléphone">
+          </div>
+          <span>ou</span>
+          <div class="form-group">
+            <label class="sr-only" for="email">Email</label>
+            <input type="text" class="form-control input-lg" name="email" placeholder="you@mail.com">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="interestl">Interessé par</label>
+            <select name="interest" class="form-control input-lg">
+              <option value="dissertation">Dissertation offerte</option>
+              <option value="disserte + stage">Dissertation et stage</option>
+            </select>
+          </div>
+          <input type="submit" class="btn btn-lg btn-primary" value="Demande d'information">
+        </form>
+        <div class="navbar-mobile">
+          <div id="logo"><%= image_tag 'logo.png', alt: 'MyMentor' %></div>
+          <a href="#form" class="btn-signup">S'inscrire</a>
+        </div>
+      </div>
+    </div>
+    <div id="banner" style="background-image: url(<%= image_path 'mymentor-11b.png' %>);">
+      <div id="logo">
+        <%= image_tag 'logo.png', alt: 'MyMentor' %>
+      </div>
+
+      <div class="container">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+          <div class="content">
+            <h1>12H de stage AEH filière ECE pour faire la différence au concours</h1>
+            <p>MyMentor, expert de l’approche pédagogique innovante propose les stages sur mesure pour vous permettre d’acquérir LA METHODE qui fera la différence au concours.</p>
+            <p>Votre stage de 12h en mini groupe de 10 avec Anna Souakri, enseignante ESCP à 25 ans pour votre sujet et combinée à l’expertise pédagogique MyMentor.</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <form action="https://formspree.io/infantino.tony@gmail.com" method="post" id="form">
+            <div class="form-group">
+              <input type="text" class="form-control input-lg" name="phone" placeholder="n° téléphone">
+            </div>
+            <p>ou</p>
+            <div class="form-group">
+              <input type="text" class="form-control input-lg" name="email" placeholder="you@mail.com">
+            </div>
+            <p>Me recontacter pour :</p>
+            <div class="form-group">
+              <select name="interest" class="form-control input-lg">
+                <option value="dissertation">Dissertation offerte</option>
+                <option value="disserte + stage">Dissertation et stage</option>
+              </select>
+            </div>
+            <input type="submit" class="btn btn-lg btn-primary btn-block" value="Demande d'information">
+            <p>Pour plus d'information, appelez Tony Infantino, le fondateur au <strong>06 99 98 75 44</strong></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="teacher">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <%= image_tag 'anna-souakri.jpg', alt: 'Anna Souakri', class: 'img-circle' %>
+            <div class="content">
+              <p><a href="https://fr.linkedin.com/in/annasouakri" title="Profile linkedin" target="_blank"><strong>Anna Souakri</strong> - <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </a></p>
+              <p>&laquo; Passionnée par l’apprentissage, j’ai pu affiner ma méthode par mon parcours atypique, de la classe préparatoire à ESCP, en passant par Ulm, le conseil et le monde des startup pédagogiques, je me destine aujourd’hui à la recherche et l’enseignement en Grandes Ecoles. Ce stage sera l’occasion pour vous d’acquérir mon savoir du monde des concours dans un format très interactif. &raquo;<p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+             <h2>Pourquoi passer par MyMentor ?</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 feature">
+            <div>
+              <h3>
+                <%= image_tag 'discussion.png', alt: 'discussion' %>
+                <span>Personnaliser pour performer au concours</span>
+              </h3>
+              <p>
+                12 heures en mini groupe de 10, très cadrés pour avancer sur 4 dissertations avec rappels des concepts et thèmes qui vous importent !
+              </p>
+            </div>
+            <blockquote>
+              <p>&laquo; 90% d’apprentissage par l’execution contre 50% si seulement vu et entendu &raquo; <sup>1</sup></p>
+            </blockquote>
+          </div>
+          <div class="col-xs-12 col-sm-4 feature">
+            <div>
+              <h3>
+                <%= image_tag 'sur-mesure.png', alt: 'sur-mesure' %>
+                <span>Comprendre pour mémoriser un maximum de contenus</span>
+              </h3>
+              <p>La 1ere journée sera dédiée à l’approfondissement de votre ma&icirc;trise des thèmes, à la compréhension de la méthodologie de la dissertation.</p>
+            </div>
+            <blockquote>
+              &laquo; L'accompagnement sur mesure permet une augmentation de 30% des performances d’une classe au concours &raquo; <sup>2</sup>
+            </blockquote>
+          </div>
+          <div class="col-xs-12 col-sm-4 feature">
+            <div>
+            <h3>
+              <%= image_tag 'comprehension.png', alt: 'comprendre' %>
+              <span>La compréhension pour optimiser votre mémoire des contenus.</span>
+            </h3>
+            <p>MyMentor axe sur un format de compréhension fondamentale des concepts combinée à des contenus illustrés afin d’optimiser votre mémorisation.</p>
+            </div>
+            <blockquote>
+              &laquo; La compréhension permet une mémorisation de 20% supérieure &raquo; <sup>3</sup>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+            <div class="row">
+              <div class="col-xs-12">
+                <h2>Témoignages d'élèves</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 testimonial">
+                <%= image_tag 'portrait-3.jpg', class: 'img-circle', alt: 'Alexis' %>
+                <div>
+                  <p>&laquo; J'ai vraiment apprécié la qualité du cours et le travail sur le décryptage d'une bonne copie &raquo;</p>
+                  <p><strong>Alexis</strong> - Prépa IPECOM</p>
+                </div>
+              </div>
+              <div class="col-xs-12 testimonial">
+                <%= image_tag 'portrait-2.jpg', class: 'img-circle', alt: 'Princia' %>
+                <div>
+                  <p>&laquo; Les polycopiés et les conseils pour une bonne dissertation ! &raquo;</p>
+                  <p><strong>Princia</strong> - Prépa Claude Monet</p>
+                </div>
+              </div>
+              <div class="col-xs-12 testimonial">
+                <%= image_tag 'portrait-1.jpg', class: 'img-circle', alt: 'Yassir' %>
+                <div>
+                  <p>&laquo; Enfin un stage où on reçoit des astuces pur perfectionner sa copie, en plus des explications claires et précises &raquo;</p>
+                  <p><strong>Yassir</strong> - Prépa Henri IV</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="timeline" style="background-image: url('<%= image_path 'mymentor-17b.png'%>')" >
+      <div class="timeline-container container">
+        <h2>Déroulement du stage</h2>
+        <p class="info">
+          Le stage aura lieu les 8 et 9 Avril 2017 au :<br />
+          <a href="https://maps.google.com/?q=5+Villa+du+Clos+de+Malevart,+75011+Paris" target="_blank">
+          <i class="fa fa-map-o" aria-hidden="true"></i> 5 villa du close de Malevart, Paris 11ème</a>
+        </p>
+        <div class="day-type">
+          <div class="day">
+            <div class="day-hour">9h00</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p>30 minutes d’échange autour du petit déjeuner pour apprendre à se connaître et bien préparer la séance de cours collectifs.</p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-17b.png' %>');"></div>
+          </div>
+          <div class="day">
+            <div class="day-hour">10h00</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>Rappel de la méthodologie de la dissertation</strong><br />
+                Travail sur la structuration du plan à partir d’une problématique.</p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-5b.png' %>');"></div>
+          </div>
+          <div class="day">
+            <div class="day-hour">11h45</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>Etude de dissertation, corrigée et commentée</strong><br />
+              Travail sur la dissertation: &laquo; Depuis la révolution industrielle, les choix effectués par les entreprises dans les pays avancés sont-ils principalement déterminés par la recherche de profil maximum ? &raquo;</p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-6b.png' %>')"></div>
+          </div>
+          <div class="day">
+            <div class="day-hour">14h30</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>Etude de dissertation, corrigée et commentée</strong><br />
+                Travail sur la dissertation : &laquo; Dans quelle mesure le facteur travail permet- il
+                d’expliquer la croissance des grandes économies capitalistes au XXème
+                siècle. &raquo;
+              </p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-7b.png' %>')"></div>
+          </div>
+          <div class="day">
+            <div class="day-hour">16h15</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>Etude de dissertation, corrigée et commentée</strong><br />
+                Travail sur la dissertation : &laquo; À la lumière de l’expérience historique des pays
+                avancés, les crises économiques sont-elles toujours des crises de l’innovation
+                ? &raquo;
+              </p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-12b.png' %>')"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2">
+          <ul>
+            <li><sup>1</sup> <a href="https://fr.wikipedia.org/wiki/Cône_de_l'apprentissage" target="_blank">Cône de l'expérience, Edgar Dale</a></li>
+            <li><sup>2</sup> <a href="http://scholar.harvard.edu/files/fryer/files/2014_injecting_charter_school_best_practices_into_traditional_public_schools.pdf" target="_blank">Roland G. Fryer, Jr. - Harvard University - Avril 2014</a></li>
+            <li><sup>3</sup> <a href="https://corela.revues.org/300" target="_blank">Sylvie Akiguet-Bakong, &laquo; Effet de la compréhension de l’énoncé sur la résolution des problèmes arithmétiques &raquo;</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready( function(){
+
+      function getHeight() {
+        if (self.innerHeight) {
+          return self.innerHeight;
+        }
+        if (document.documentElement && document.documentElement.clientHeight) {
+          return document.documentElement.clientHeight;
+        }
+        if (document.body) {
+          return document.body.clientHeight;
+        }
+      };
+
+      $('.day').hover( function(){
+        $(this).children('.day-hour').addClass('day-hour-hover');
+        $(this).children('.day-desc').addClass('day-desc-hover');
+        if ($(document).innerWidth() > 768) {
+          var pic = $(this).children('.day-picture').css('background-image');
+          $('#timeline').css('background-image', pic);
+        }
+      }, function() {
+        $('.day-hour').removeClass('day-hour-hover');
+        $('.day-desc').removeClass('day-desc-hover');
+      });
+
+      $(document).scroll(function () {
+          var y = $(this).scrollTop();
+          if (y > 400) {
+              $('.scroll-menu').fadeIn();
+          } else {
+              $('.scroll-menu').fadeOut();
+          }
+      });
+
+      if ($(document).innerWidth() <= 768) {
+        $('#timeline').removeAttr('style');
+      }
+
+    });
+    </script>

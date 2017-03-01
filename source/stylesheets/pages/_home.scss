@@ -1,0 +1,391 @@
+body {
+  font-size: 15px;
+/*  font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #777;
+}
+h2 {
+  font-size: 32px;
+  margin-top: 0px;
+}
+blockquote {
+  height: 95px;
+  padding: 15px;
+  margin: 0;
+  font-size: 15px;
+  border-left: 0;
+  background-color: #4b74b9;
+  color: #fff;
+}
+.input-lg, .btn-lg {
+  border-radius: 3px;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+.btn-primary {
+  background-color: rgba(247,148,29,1);
+  border: rgb(189, 113, 22);
+}
+.navbar-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-mobile #logo {
+  margin: 0;
+}
+.scroll-menu form {
+  display: none;
+}
+.navbar-mobile .btn-signup {
+  padding: 10px 20px;
+  border-radius: 3px;
+  background-color: #ededed;
+  color: #555;
+  font-weight: bold;
+}
+#logo {
+  margin: auto;
+  margin-bottom: 15px;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+#logo img {
+  width: 50px;
+}
+.scroll-menu {
+  width: 100%;
+  padding: 10px;
+  z-index: 100;
+  position: fixed;
+  bottom: -1px;
+  background-color: rgba(14,28,51,1);
+  display: none;
+}
+.scroll-menu .form-group {
+  margin-right: 10px;
+}
+.scroll-menu span {
+  color: #fff;
+  margin-right: 10px;
+}
+
+/**********************************
+               Banner
+**********************************/
+
+#banner {
+  background-size: cover;
+  padding: 30px 0;
+}
+#banner h1 {
+  font-size: 22px;
+  margin: 0 0 10px 0;
+}
+#banner .content {
+  color: #fff;
+  margin: 0 0 20px 0;
+}
+#banner .content p a {
+  font-size: 20px;
+}
+#banner form {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#banner form input[type=submit] {
+  margin-top: 20px;
+}
+#banner form p {
+  color: #fff;
+  text-align: center;
+}
+#banner form p:last-child {
+  margin: 10px 0 0 0;
+}
+
+/**********************************
+               Teacher
+**********************************/
+
+#teacher {
+  background: rgba(25, 49, 91, 1);
+  padding: 40px 0;
+  color: #fff;
+}
+#teacher .col-xs-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#teacher img {
+  margin-bottom: 20px;
+}
+#teacher .content {
+  max-width: 600px;
+  text-align: center;
+}
+#teacher .content a {
+  color: #fff;
+}
+
+/**********************************
+               Features
+**********************************/
+
+#features {
+  background-color: #F4F4F4;
+  padding: 30px 0;
+}
+#features h2 {
+  margin-top: 0px;
+  text-align: center;
+}
+.feature {
+  margin-bottom: 15px;
+}
+.feature h3 {
+  font-size: 18px;
+  display: flex;
+  margin-bottom: 15px;
+
+}
+.feature img {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px 0 0;
+}
+
+/**********************************
+              Testimonials
+**********************************/
+
+#testimonials {
+  padding: 30px 0;
+  text-align: center;
+}
+
+#testimonials p {
+  margin: 10px 0;
+}
+
+#testimonials img {
+  margin-top: 20px;
+}
+
+/**********************************
+              Timeline
+**********************************/
+
+#timeline {
+  padding: 30px 0 80px 0;
+  color: #555;
+  text-align: center;
+  background-color: #F4F4F4;
+}
+#timeline h2 {
+  margin:0 0 40px 0;
+}
+/*.timeline-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 600px;
+  background: rgba(0, 0, 0, 0.5);
+}*/
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.day-hour {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-weight: bold;
+}
+.day-circle {
+  display: none;
+}
+.day-desc {
+  padding: 15px;
+}
+.day-desc p {
+  margin: 0 0 10px 0;
+}
+.day-desc p:last-child {
+  margin: 0;
+}
+.day-picture {
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+}
+
+/**********************************
+              Footer
+**********************************/
+#footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-size: 14px;
+}
+#footer ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+#footer ul a {
+  color: #000;
+}
+
+
+@media screen and (min-width: 768px) {
+  .navbar-mobile {
+    display: none;
+  }
+  .scroll-menu form{
+    display: block;
+  }
+  #logo {
+    margin-bottom: 15vh;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  #banner {
+    height: 100vh;
+    padding: 30px 0;
+    padding-top: 10px;
+  }
+  #banner .content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  #banner h1 {
+    font-size: 34px;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  #banner form {
+    padding: 40px;
+  }
+  #banner form input[type=submit] {
+    margin-top: 30px;
+  }
+  #teacher {
+    padding: 60px 0;
+  }
+  #teacher .content {
+    text-align: left;
+  }
+  #teacher .col-xs-12 {
+    flex-direction: row;
+  }
+  #teacher p {
+    font-size: 18px;
+  }
+  #teacher img {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  #testimonials {
+    padding: 15px 0 40px 0;
+  }
+  .testimonial  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+  .testimonial img {
+    margin: 0 20px 0 0;
+  }
+  #timeline {
+    padding: 15px 0 60px 0;
+    position: relative;
+    color: #fff;
+    background-size: cover;
+  }
+  #timeline h2 {
+    max-width: 800px;
+    margin: auto;
+    margin-left: 300px;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  #timeline .info {
+    margin: 0 0 0 300px;
+    text-align: left;
+  }
+  #timeline .info a {
+    color: #fff;
+    font-weight: bold;
+  }
+  #features {
+    padding: 15px 0;
+  }
+  #features h2 {
+    margin: 0 0 40px 0;
+  }
+  #features blockquote {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .day {
+    margin-top: 0;
+    flex-direction: row;
+    margin: 10px 0;
+  }
+  .day-type {
+    max-width: 800px;
+    margin: auto;
+  }
+  .day-hour {
+    margin: 10px 0;
+    background-color: transparent;
+  }
+  .day-hour-hover {
+    color: #555;
+    background-color: #fff;
+  }
+  .day-circle {
+    display: flex;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 0 15px;
+  }
+  .day-desc {
+    width: 695px;
+    text-align: left;
+  }
+  .day-desc-hover {
+    color: #555;
+    background-color: #fff;
+  }
+  .day-picture {
+    display: none;
+  }
+
+}
