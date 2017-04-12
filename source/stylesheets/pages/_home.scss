@@ -120,25 +120,35 @@ a:hover, a:active, a:focus {
                Teacher
 **********************************/
 
-#teacher {
+#teachers {
   background: rgba(25, 49, 91, 1);
   padding: 40px 0;
   color: #fff;
 }
-#teacher .col-xs-12 {
+#teachers .col-xs-12 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#teacher img {
+#teachers img {
   margin-bottom: 20px;
 }
-#teacher .content {
-  max-width: 600px;
-  text-align: center;
+.teacher {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  &:first-child {
+    margin-bottom: 40px;
+  }
 }
-#teacher .content a {
+.teacher .content {
+  max-width: 600px;
+}
+.teacher .content a {
   color: #fff;
 }
 
@@ -147,7 +157,7 @@ a:hover, a:active, a:focus {
 **********************************/
 
 #features {
-  background-color: #F4F4F4;
+  background-color: #FFF;
   padding: 30px 0;
 }
 #features h2 {
@@ -170,42 +180,26 @@ a:hover, a:active, a:focus {
 }
 
 /**********************************
-              Testimonials
-**********************************/
-
-#testimonials {
-  padding: 30px 0;
-  text-align: center;
-}
-
-#testimonials p {
-  margin: 10px 0;
-}
-
-#testimonials img {
-  margin-top: 20px;
-}
-
-/**********************************
               Timeline
 **********************************/
 
 #timeline {
-  padding: 30px 0 80px 0;
+  padding: 30px 0 120px 0;
   color: #555;
   text-align: center;
-  background-color: #F4F4F4;
+  background-color: #F0F0F0;
 }
 #timeline h2 {
   margin:0 0 40px 0;
 }
-/*.timeline-overlay {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 600px;
-  background: rgba(0, 0, 0, 0.5);
-}*/
+#timeline .stages {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .selector{
+    margin: auto;
+  }
+}
 .day {
   display: flex;
   flex-direction: column;
@@ -264,7 +258,9 @@ a:hover, a:active, a:focus {
     display: none;
   }
   .scroll-menu form{
-    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
   #logo {
     margin-bottom: 15vh;
@@ -294,33 +290,25 @@ a:hover, a:active, a:focus {
   #banner form input[type=submit] {
     margin-top: 30px;
   }
-  #teacher {
+  #teachers {
     padding: 60px 0;
   }
-  #teacher .content {
+  #teachers .content {
     text-align: left;
   }
-  #teacher .col-xs-12 {
+  #teachers .col-xs-12 {
     flex-direction: row;
   }
-  #teacher p {
+  #teachers p {
     font-size: 18px;
   }
-  #teacher img {
+  #teachers img {
     margin-bottom: 0;
     margin-right: 20px;
   }
-  #testimonials {
-    padding: 15px 0 40px 0;
-  }
-  .testimonial  {
-    display: flex;
+  .teacher {
     flex-direction: row;
-    align-items: center;
-    text-align: left;
-  }
-  .testimonial img {
-    margin: 0 20px 0 0;
+    align-items: flex-start;
   }
   #timeline {
     padding: 15px 0 60px 0;
@@ -335,8 +323,16 @@ a:hover, a:active, a:focus {
     margin-bottom: 40px;
     text-align: left;
   }
+  #timeline .stages {
+    flex-direction: row;
+    max-width: 800px;
+    margin: auto;
+    .selector {
+      margin: 0 20px 0 0;
+      text-align: left;
+    }
+  }
   #timeline .info {
-    margin: 0 0 0 300px;
     text-align: left;
   }
   #timeline .info a {
@@ -345,6 +341,7 @@ a:hover, a:active, a:focus {
   }
   #features {
     padding: 15px 0;
+    background-color: #F4F4F4;
   }
   #features h2 {
     margin: 0 0 40px 0;

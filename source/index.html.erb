@@ -3,77 +3,93 @@ title: Stage AEH filière ECE avec MyMentor
 ---
 
 <div class="scroll-menu">
-      <div class="container text-center">
-        <form action="https://formspree.io/contact@mymentor.fr" method="post" class="form-inline">
-          <div class="form-group">
-            <label class="sr-only" for="phone">Téléphone</label>
-            <input type="text" class="form-control input-lg" name="phone" placeholder="n° téléphone">
-          </div>
-          <span>ou</span>
-          <div class="form-group">
-            <label class="sr-only" for="email">Email</label>
-            <input type="text" class="form-control input-lg" name="email" placeholder="you@mail.com">
-          </div>
-          <div class="form-group">
-            <label class="sr-only" for="interestl">Interessé par</label>
-            <select name="interest" class="form-control input-lg">
-              <option value="dissertation">Dissertation offerte</option>
-              <option value="disserte + stage">Dissertation et stage</option>
-            </select>
-          </div>
-          <input type="submit" class="btn btn-lg btn-primary" value="Demande d'information">
-        </form>
-        <div class="navbar-mobile">
-          <div id="logo"><%= image_tag 'logo.png', alt: 'MyMentor' %></div>
-          <a href="#form" class="btn-signup">S'inscrire</a>
-        </div>
+  <div class="container text-center">
+    <form action="https://formspree.io/contact@mymentor.fr" method="post" class="form-inline">
+      <div class="form-group">
+        <label class="sr-only" for="phone">Téléphone</label>
+        <input type="text" class="form-control input-lg" name="phone" placeholder="n° téléphone">
+      </div>
+      <span>ou</span>
+      <div class="form-group">
+        <label class="sr-only" for="email">Email</label>
+        <input type="text" class="form-control input-lg" name="email" placeholder="adresse@email.com">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="interest">Interessé par</label>
+        <select name="interest" class="form-control input-lg">
+          <option value="stage-eco">Stage d'économie</option>
+          <option value="stage-oral">Stage oral de personnalité</option>
+          <option value="full-stage">Les deux stages</option>
+        </select>
+      </div>
+      <input type="submit" class="btn btn-lg btn-primary" value="Demande d'information">
+    </form>
+    <div class="navbar-mobile">
+      <div id="logo"><%= image_tag 'logo.png', alt: 'MyMentor' %></div>
+      <a href="#form" class="btn-signup">S'inscrire</a>
+    </div>
+  </div>
+</div>
+
+<div id="banner" style="background-image: url(<%= image_path 'mymentor-11b.jpg' %>);">
+  <div id="logo">
+    <%= image_tag 'logo.png', alt: 'MyMentor' %>
+  </div>
+
+  <div class="container">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+      <div class="content">
+        <h1>Préparer HEC<br /> en 2 demi-journées !</h1>
+        <p>Un programme sur mesure en mini groupes de 10, cadrés par les jury des concours pour préparer vos oraux.</p>
+        <p>A vous de choisir votre préparation : entretien de personnalité et d’économie avec nos 2 professeurs stars !</p>
       </div>
     </div>
-    <div id="banner" style="background-image: url(<%= image_path 'mymentor-11b.jpg' %>);">
-      <div id="logo">
-        <%= image_tag 'logo.png', alt: 'MyMentor' %>
-      </div>
-
-      <div class="container">
-        <div class="col-xs-12 col-sm-6 col-sm-offset-1">
-          <div class="content">
-            <h1>12H de stage ESH filière ECE pour faire la différence aux concours</h1>
-            <p>MyMentor, expert de l’approche pédagogique innovante propose les stages sur mesure pour vous permettre d’acquérir LA METHODE qui fera la différence au concours.</p>
-            <p>Votre stage de 12h en mini groupe de 10 avec Anna Souakri, enseignante ESCP à 25 ans pour votre sujet et associée à l’expertise pédagogique MyMentor.</p>
-          </div>
+    <div class="col-xs-12 col-sm-4">
+      <form action="https://formspree.io/contact@mymentor.fr" method="post" id="form">
+        <div class="form-group">
+          <input type="text" class="form-control input-lg" name="phone" placeholder="n° téléphone">
         </div>
-        <div class="col-xs-12 col-sm-4">
-          <form action="https://formspree.io/contact@mymentor.fr" method="post" id="form">
-            <div class="form-group">
-              <input type="text" class="form-control input-lg" name="phone" placeholder="n° téléphone">
-            </div>
-            <p>ou</p>
-            <div class="form-group">
-              <input type="text" class="form-control input-lg" name="email" placeholder="you@mail.com">
-            </div>
-            <p>Me recontacter pour :</p>
-            <div class="form-group">
-              <select name="interest" class="form-control input-lg">
-                <option value="dissertation">Dissertation offerte</option>
-                <option value="disserte + stage">Dissertation et stage</option>
-              </select>
-            </div>
-            <input type="submit" class="btn btn-lg btn-primary btn-block" value="Demande d'information">
-            <p>Vous pouvez appeler Tony Infantino<br /> le fondateur au <strong>06 99 98 75 44</strong></p>
-          </form>
+        <p>ou</p>
+        <div class="form-group">
+          <input type="text" class="form-control input-lg" name="email" placeholder="you@mail.com">
         </div>
-      </div>
+        <p>Me recontacter pour :</p>
+        <div class="form-group">
+          <select name="interest" class="form-control input-lg">
+            <option value="stage-eco">Stage d'économie</option>
+            <option value="stage-oral">Stage oral de personnalité</option>
+            <option value="full-stage">Les deux stages</option>
+          </select>
+        </div>
+        <input type="submit" class="btn btn-lg btn-primary btn-block" value="Demande d'information">
+        <p>Vous pouvez appeler Tony Infantino<br /> le fondateur au <strong>06 99 98 75 44</strong></p>
+      </form>
     </div>
+  </div>
+</div>
 
-    <div id="teacher">
+    <div id="teachers">
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-            <%= image_tag 'anna-souakri.jpg', alt: 'Anna Souakri', class: 'img-circle' %>
-            <div class="content">
-              <p><a href="https://fr.linkedin.com/in/annasouakri" title="Profile linkedin" target="_blank"><strong>Anna Souakri</strong> - <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              </a></p>
-              <p>&laquo; Passionnée par l'enseignement, et aujourd'hui professeure à l'ESCP, j’ai pu élaborer ma méthode par mon parcours atypique: de la classe préparatoire à l'ESCP, en passant par Dauphine et l'ENS, puis le Conseil et l'univers des start-ups pédagogiques, sans oublier la Recherche. Ces expériences sont venues renforcer une expertise de 8 années d'enseignement en Economie aux étudiants de classes préparatoires ECE. Ce stage sera l’opportunité pour vous d’acquérir les bonnes pratiques pour réussir vos concours dans un format très interactif. &raquo;<p>
+            <div class="teacher">
+              <%= image_tag 'anna-souakri.jpg', alt: 'Anna Souakri', class: 'avatar-large' %>
+              <div class="content">
+                <p><a href="https://fr.linkedin.com/in/annasouakri" title="Profile linkedin" target="_blank"><strong>Anna Souakri</strong> - <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a></p>
+                <p>&laquo; Membre du jury d’admission des épreuves orales de l’ESCP et enseignante en stratégie dans cette même école, je vous apporterai au cours du stage mon expertise afin de maximiser vos chances de réussir brillamment à l’oral. Passionnée par la transmission des savoirs, j’ai pu renforcer mon expertise pédagogique à travers mon activité d’enseignante à ESCP Europe depuis 3 ans et d’accompagnement individuel et collectif d’étudiants de classe préparatoire ECE sur 6 années. &raquo;<p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="teacher">
+              <%= image_tag 'adrien-rivierre.jpg', alt: 'Adrien Rivierre', class: 'avatar-large' %>
+              <div class="content">
+                <p><a href="https://www.linkedin.com/in/adrienrivierre/" title="Profile linkedin Adrien Rivierre" target="_blank"><strong>Adrien Rivierre</strong> - <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a></p>
+                <p>&laquo; Directeur de la communication au sein de General Electric Digital Europe depuis plus d’un an, j’ai auparavant été plume de Clara Gaymard alors PDG de General Electric en France. J’ai ainsi développé une expertise dans les domaines de l’argumentation, de la prise de parole et de l’influence. Passionné par l’éloquence, je suis Vice-président de la Fédération Francophone de Débat, fondateur du site Les Beaux Parleurs et contributeur au journal Les Echos. &raquo;<p>
+                <p>Ce stage vise à vous donner toutes les techniques, autant sur le fond que sur la forme, pour convaincre les jurys d’école et faire la différence vis-à- vis des autres candidats. Très interactive, la session n’est pas un cours magistral et se structure autour d’exercices pratiques.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -88,100 +104,77 @@ title: Stage AEH filière ECE avec MyMentor
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-sm-4 feature">
+          <div class="col-xs-12 col-sm-3 col-sm-offset-3 feature">
             <div>
               <h3>
-                <%= image_tag 'discussion.png', alt: 'discussion' %>
-                <span>Favoriser l'apprentissage par la pratique</span>
+                <span>Maitrise parfaite du programme</span>
               </h3>
               <p>
-                12 heures en mini groupe de 10, très cadrés pour avancer sur 4 dissertations avec rappels des concepts et thèmes importants !
+                Revue des notions fondamentales de l’oral d’économie en fonction de tes besoins.
               </p>
             </div>
-            <blockquote>
-              <p>&laquo; 90% du contenu est retenu par un cours interactif contre seulement 50% par un cours magistral. &raquo; <sup>1</sup></p>
-            </blockquote>
           </div>
-          <div class="col-xs-12 col-sm-4 feature">
+          <div class="col-xs-12 col-sm-3 feature">
             <div>
               <h3>
-                <%= image_tag 'sur-mesure.png', alt: 'sur-mesure' %>
-                <span>Un travail sur mesure pour réussir au concours</span>
+                <span>Astuces et la méthode par un membre du jury</span>
               </h3>
-              <p>En plus des 4 dissertations, le stage est ponctué de sessions sur mesure, de rappels sur les notions clés du concours.</p>
+              <p>
+                Retour d’expérience d’Anna sur les bonnes pratiques et les astuces pour surprendre le jury !
+              </p>
             </div>
-            <blockquote>
-              &laquo; L'accompagnement sur mesure permet une augmentation de 30% des performances d’une classe au concours. &raquo; <sup>2</sup>
-            </blockquote>
           </div>
-          <div class="col-xs-12 col-sm-4 feature">
+          <div class="col-xs-12 col-sm-3 col-sm-offset-3 feature">
             <div>
             <h3>
-              <%= image_tag 'comprehension.png', alt: 'comprendre' %>
-              <span>La compréhension pour optimiser votre mémoire des contenus</span>
+              <span>Apprentissage par la mise en situation</span>
             </h3>
-            <p>MyMentor axe sur un format de compréhension fondamentale des concepts combinée à des contenus illustrés afin d’optimiser votre mémorisation.</p>
+            <p>3 sujets d’économie réalisés sous la direction Anna Souakri, Jury ESCP</p>
             </div>
-            <blockquote>
-              &laquo; La compréhension permet de retenir 20% plus de contenu. &raquo; <sup>3</sup>
-            </blockquote>
+          </div>
+          <div class="col-xs-12 col-sm-3 feature">
+            <div>
+            <h3>
+              <span>Apprentissage par la mise en situation</span>
+            </h3>
+            <p>3 sujets d’économie réalisés sous la direction Anna Souakri, Jury ESCP</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="testimonials">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-            <div class="row">
-              <div class="col-xs-12">
-                <h2>Témoignages d'élèves</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-12 testimonial">
-                <%= image_tag 'portrait-3.jpg', class: 'img-circle', alt: 'Alexis' %>
-                <div>
-                  <p>&laquo; J'ai vraiment apprécié la qualité du cours et le travail sur le décryptage d'une bonne copie. &raquo;</p>
-                  <p><strong>Alexis</strong> - Prépa IPECOM</p>
-                </div>
-              </div>
-              <div class="col-xs-12 testimonial">
-                <%= image_tag 'portrait-2.jpg', class: 'img-circle', alt: 'Princia' %>
-                <div>
-                  <p>&laquo; Les polycopiés et les conseils pour une bonne dissertation ! &raquo;</p>
-                  <p><strong>Aline</strong> - Prépa Claude Monet</p>
-                </div>
-              </div>
-              <div class="col-xs-12 testimonial">
-                <%= image_tag 'portrait-1.jpg', class: 'img-circle', alt: 'Yassir' %>
-                <div>
-                  <p>&laquo; Enfin un stage où on reçoit des astuces pour perfectionner sa copie, en plus des explications claires et précises. &raquo;</p>
-                  <p><strong>Hugo</strong> - Prépa Henri IV</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div id="timeline" style="background-image: url('<%= image_path 'mymentor-17b.jpg'%>')" >
       <div class="timeline-container container">
         <h2>Déroulement du stage</h2>
-        <p class="info">
-          Le stage aura lieu les 8 et 9 Avril 2017 au :<br />
-          <a href="https://maps.google.com/?q=5+Villa+du+Clos+de+Malevart,+75011+Paris" target="_blank">
-          <i class="fa fa-map-o" aria-hidden="true"></i> 5 villa du clos de Malevart, Paris 11ème</a>
-        </p>
-        <div class="day-type">
+        <div class="stages">
+          <div class="selector">
+            Préparation à l’épreuve : <br>
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="menu-stage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Sélectionnez le programme
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="menu-stage">
+                <li><a href="#">Economie filière ECE</a></li>
+                <li><a href="#">Entretien individuel</a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="info">
+            Le stage aura lieu les 8 et 9 Avril 2017 au :<br />
+            <a href="https://maps.google.com/?q=5+Villa+du+Clos+de+Malevart,+75011+Paris" target="_blank">
+            <i class="fa fa-map-o" aria-hidden="true"></i> 5 villa du clos de Malevart, Paris 11ème</a>
+          </p>
+        </div>
+        <div class="day-type" data-type="economie">
           <div class="day">
             <div class="day-hour">9h30</div>
             <div class="day-circle"></div>
             <div class="day-desc">
-              <p><strong>Petit déjeuner MyMentor</strong><br />
-                30 minutes de déjeuner cadré afin de briser la glace avant le début du stage.</p>
+              <p><strong>Petit-déjeuner MyMentor</strong><br />
+                Chacun des participants répond à la question suivante : Quel est pour vous le plus grand orateur français ? Les réponses sont le moyen informel d’engager un dialogue sur la prise de parole en public.</p>
             </div>
             <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-16b.jpg' %>');"></div>
           </div>
@@ -189,60 +182,65 @@ title: Stage AEH filière ECE avec MyMentor
             <div class="day-hour">10h00</div>
             <div class="day-circle"></div>
             <div class="day-desc">
-              <p><strong>Rappel de la méthodologie de la dissertation</strong><br />
-                Rappel de la méthode et travail sur la structuration de la dissertation.</p>
+              <p><strong>Rappels méthodologiques de l’entretien de personnalité</strong><br />
+                Les objectifs du jury, vos objectifs, les critères d’évaluation</p>
             </div>
             <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-5b.jpg' %>');"></div>
           </div>
           <div class="day">
-            <div class="day-hour">10h30</div>
+            <div class="day-hour">10h20</div>
             <div class="day-circle"></div>
             <div class="day-desc">
-              <p><strong>Travail sur la 1ère dissertation, corrigée et commentée</strong><br />
-              &laquo; La politique monétaire est-elle efficace face à la déflation ? &raquo;</p>
+              <p><strong>Faire une excellente 1ère impression</strong><br />
+              Mise en pratique : réaliser une présentation de soi, orienter les questions du jury, prendre le contrôle de l’entretien et se démarquer des autres candidats sous l’œil du jury</p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-6b.jpg' %>')"></div>
+          </div>
+        </div>
+
+        <div class="day-type" data-type="personnalite" style="display: none">
+          <div class="day">
+            <div class="day-hour">14h30</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>Structure de l’épreuve</strong><br />
+                Présentation, déroulé et recommandations techniques.</p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-16b.jpg' %>');"></div>
+          </div>
+          <div class="day">
+            <div class="day-hour">14h45</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>Travail sur les concepts fondamentaux</strong><br />
+                Rappels sur les éléments clés de micro et de macroéconomie et approfondissement en fonction des besoins du groupe.</p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-5b.jpg' %>');"></div>
+          </div>
+          <div class="day">
+            <div class="day-hour">16h</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>Entraînement interactif sur des sujets potentiels</strong><br />
+                Analyse et traitement collaboratif de 3 sujets abordant des thématiques transverses au programme d’AEHSC (sur les deux années).</p>
             </div>
             <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-6b.jpg' %>')"></div>
           </div>
           <div class="day">
-            <div class="day-hour">14h00</div>
+            <div class="day-hour">17h30</div>
             <div class="day-circle"></div>
             <div class="day-desc">
-              <p><strong>Rappels des fondamentaux de micro</strong><br />
-                Travail sur le Modèle ISLM et l’approche WS/PS. Echange sur les notions de micro et macroéconomie en fonction des besoins du groupe.
+              <p><strong>Quizz et Questions réponses</strong><br />
+                Quizz sur les notions à maîtriser le jour J (15 min) puis correction et échanges.
               </p>
             </div>
             <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-7b.jpg' %>')"></div>
           </div>
-          <div class="day">
-            <div class="day-hour">15h15</div>
-            <div class="day-circle"></div>
-            <div class="day-desc">
-              <p><strong>Travail sur la 2eme dissertation, corrigée et commentée</strong><br />
-                &laquo; Ch&ocirc;mage et marché du travail de 1834 à aujourd’hui. &raquo;
-              </p>
-            </div>
-            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-12b.jpg' %>')"></div>
-          </div>
         </div>
       </div>
     </div>
-    <div id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-          <ul>
-            <li><sup>1</sup> <a href="https://fr.wikipedia.org/wiki/Cône_de_l'apprentissage" target="_blank">Cône de l'expérience, Edgar Dale</a></li>
-            <li><sup>2</sup> <a href="http://scholar.harvard.edu/files/fryer/files/2014_injecting_charter_school_best_practices_into_traditional_public_schools.pdf" target="_blank">Roland G. Fryer, Jr. - Harvard University - Avril 2014</a></li>
-            <li><sup>3</sup> <a href="https://corela.revues.org/300" target="_blank">Sylvie Akiguet-Bakong, &laquo; Effet de la compréhension de l’énoncé sur la résolution des problèmes arithmétiques &raquo;</a></li>
-          </ul>
-          </div>
-        </div>
-      </div>
+    <!-- <div id="footer"></div> -->
 
-    </div>
-    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script>
     $(document).ready( function(){
 
@@ -257,6 +255,10 @@ title: Stage AEH filière ECE avec MyMentor
           return document.body.clientHeight;
         }
       };
+
+      // $('').on('click', function(){
+
+      // });
 
       $('.day').hover( function(){
         $(this).children('.day-hour').addClass('day-hour-hover');
