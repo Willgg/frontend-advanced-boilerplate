@@ -153,7 +153,7 @@ title: Oral HEC MyMentor
             <li><a href="#" class="btn btn-default" data-select="economie">Oral d'économie</a></li>
           </ul>
         </div>
-        <div class="day-type" data-type="economie">
+        <div class="day-type" data-type="personnalite">
           <div class="day">
             <div class="day-hour">9h30</div>
             <div class="day-circle"></div>
@@ -228,7 +228,7 @@ title: Oral HEC MyMentor
           </div>
         </div>
 
-        <div class="day-type" data-type="personnalite" style="display: none">
+        <div class="day-type" data-type="economie" style="display: none">
           <div class="day">
             <div class="day-hour">14h30</div>
             <div class="day-circle"></div>
@@ -292,7 +292,7 @@ title: Oral HEC MyMentor
         $(this).addClass("selected");
         var data = $(this).data("select");
         $(" [data-type] ").hide();
-        $(" [data-type=" + data + "] ").show();
+        $('[data-type="' + data + '"]').show();
       });
 
       $('.day').hover( function(){
