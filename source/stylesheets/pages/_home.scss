@@ -124,6 +124,21 @@ a:hover, a:active, a:focus {
 }
 
 /**********************************
+              Offer
+**********************************/
+#offers {
+  padding: 40px 0;
+  ul {
+    font-size: 18px;
+    margin: 0 0 0 20px;
+    padding: 0;
+    list-style-type: none;
+    li {
+      line-height: 26px;
+    }
+  }
+}
+/**********************************
                Teacher
 **********************************/
 
