@@ -21,6 +21,7 @@ title: Oral HEC MyMentor
           <option value="stage-oral">Stage oral de personnalité</option>
           <option value="full-stage">Les deux stages</option>
         </select>
+        <input type="text" name="_gotcha" style="display:none" />
       </div>
       <input type="submit" class="btn btn-lg btn-primary" value="Demande d'information">
     </form>
@@ -41,7 +42,8 @@ title: Oral HEC MyMentor
       <div class="content">
         <h1>Préparer HEC<br />en 2 demi-journées !</h1>
         <p>Un programme sur mesure en mini groupes de 10, cadrés par les jury des concours pour préparer vos oraux.</p>
-        <p>A vous de choisir votre préparation : entretien de personnalité et d’économie avec nos 2 professeurs stars !</p>
+        <p>Votre stage d’oral d’économie cadré avec Anna Souakri, jury et enseignante à ESCP Europe.</p>
+        <p>Votre stage d’oral de personnalité cadré par Adrien Rivierre, expert de la prise de parole.</p>
       </div>
     </div>
     <div class="col-xs-12 col-sm-4">
@@ -69,89 +71,107 @@ title: Oral HEC MyMentor
   </div>
 </div>
 
-    <div id="teachers">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="teacher">
-              <%= image_tag 'anna-souakri.jpg', alt: 'Anna Souakri', class: 'avatar-large' %>
-              <div class="content">
-                <p><a href="https://fr.linkedin.com/in/annasouakri" title="Profile linkedin" target="_blank"><strong>Anna Souakri</strong> - <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                </a></p>
-                <p>&laquo; Membre du jury d’admission des épreuves orales de l’ESCP et enseignante en stratégie dans cette même école, je vous apporterai au cours du stage mon expertise afin de maximiser vos chances de réussir brillamment à l’oral.</p>
-                <p>Au cours de ce stage, j’ambitionne, dans un format très interactif, de vous faire acquérir les bonnes pratiques et de vous motiver afin d’épater le jury ! &raquo;<p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="teacher">
-              <%= image_tag 'adrien-rivierre.jpg', alt: 'Adrien Rivierre', class: 'avatar-large' %>
-              <div class="content">
-                <p><a href="https://www.linkedin.com/in/adrienrivierre/" title="Profile linkedin Adrien Rivierre" target="_blank"><strong>Adrien Rivierre</strong> - <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                </a></p>
-                <p>&laquo; Directeur de la communication au sein de General Electric Digital Europe depuis plus d’un an, contributeur au journal Les Echos, j’ai auparavant été plume de Clara Gaymard alors PDG de General Electric en France.</p>
-                <p>Ce stage très interactif, structuré autour d’exercices pratiques, vise à vous donner toutes les techniques pour convaincre les jurys d’école et vous démarquer des autres candidats. &raquo;<p>
-              </div>
-            </div>
-          </div>
-        </div>
+<div id="offers">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <h2>Deux experts du concours HEC pour ton stage du 27 mai:</h2>
+        <ul>
+          <li>Oral d’économie avec Anna Souakri :
+              <strong>275€</strong><small>/demi-journée</small> <small>(<a href="#timeline">voir le détail</a>)</small></li>
+          <li>Entretien de personnalité avec Adrien Rivierre :
+              <strong>275€</strong><small>/demi-journée</small> <small>(<a href="#timeline")>voir le détail</a>)</small></li>
+          <li>La journée complète pour assurer HEC :
+              <del>550€</del> <strong>500€</strong><small>/journée</small></li>
+        </ul>
       </div>
     </div>
+  </div>
+</div>
 
-    <div id="features">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-             <h2>Pourquoi passer par MyMentor ?</h2>
+<div id="teachers">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="teacher">
+          <%= image_tag 'anna-souakri.jpg', alt: 'Anna Souakri', class: 'avatar-large' %>
+          <div class="content">
+            <p><a href="https://fr.linkedin.com/in/annasouakri" title="Profile linkedin" target="_blank"><strong>Anna Souakri</strong> - <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a></p>
+            <p>&laquo; Membre du jury d’admission des épreuves orales de l’ESCP et enseignante en stratégie dans cette même école, je vous apporterai au cours du stage mon expertise afin de maximiser vos chances de réussir brillamment à l’oral.</p>
+            <p>Au cours de ce stage, j’ambitionne, dans un format très interactif, de vous faire acquérir les bonnes pratiques et de vous motiver afin d’épater le jury ! &raquo;<p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-3 col-sm-offset-3 feature">
-            <div>
-              <div class="icon-circle">
-                <i class="fa fa-book" aria-hidden="true"></i>
-              </div>
-              <h3><span>Maitrise parfaite du programme</span></h3>
-              <p>
-                Revue des notions fondamentales de l’oral en fonction de tes besoins.
-              </p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-3 feature">
-            <div>
-              <div class="icon-circle">
-                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-              </div>
-              <h3>
-                <span>Astuces et méthode par un membre du jury</span></h3>
-              <p>
-                Retour d’expérience des 2 jurys sur les bonnes pratiques et les astuces pour surprendre le jury !
-              </p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-3 col-sm-offset-3 feature">
-            <div>
-              <div class="icon-circle">
-                <i class="fa fa-commenting-o" aria-hidden="true"></i>
-              </div>
-              <h3>
-                <span>Apprentissage par la pratique</span></h3>
-              <p>3 sujets d’économie et 5 mises en pratique d’oral pour une maitrise complète de des épreuves</p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-3 feature">
-            <div>
-              <div class="icon-circle">
-                <i class="fa fa-user" aria-hidden="true"></i>
-              </div>
-              <h3>
-                <span>Compte rendu individualisé</span></h3>
-              <p>Débrief sur tous les points à travailler pour t’assurer l’excellence à l’entretien.</p>
-            </div>
+      </div>
+      <div class="col-xs-12">
+        <div class="teacher">
+          <%= image_tag 'adrien-rivierre.jpg', alt: 'Adrien Rivierre', class: 'avatar-large' %>
+          <div class="content">
+            <p><a href="https://www.linkedin.com/in/adrienrivierre/" title="Profile linkedin Adrien Rivierre" target="_blank"><strong>Adrien Rivierre</strong> - <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a></p>
+            <p>&laquo; Directeur de la communication au sein de General Electric Digital Europe depuis plus d’un an, contributeur au journal Les Echos, j’ai auparavant été plume de Clara Gaymard alors PDG de General Electric en France.</p>
+            <p>Ce stage très interactif, structuré autour d’exercices pratiques, vise à vous donner toutes les techniques pour convaincre les jurys d’école et vous démarquer des autres candidats. &raquo;<p>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<div id="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+         <h2>Pourquoi passer par MyMentor ?</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-3 col-sm-offset-3 feature">
+        <div>
+          <div class="icon-circle">
+            <i class="fa fa-book" aria-hidden="true"></i>
+          </div>
+          <h3><span>Maitrise parfaite du programme</span></h3>
+          <p>
+            Revue des notions fondamentales de l’oral en fonction de tes besoins.
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3 feature">
+        <div>
+          <div class="icon-circle">
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+          </div>
+          <h3>
+            <span>Astuces et méthode par un membre du jury</span></h3>
+          <p>
+            Retour d’expérience sur les bonnes pratiques et les astuces pour surprendre le jury !
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3 col-sm-offset-3 feature">
+        <div>
+          <div class="icon-circle">
+            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+          </div>
+          <h3>
+            <span>Apprentissage par la pratique</span></h3>
+          <p>3 sujets d’économie, 5 exercices de personnalité pour vivre l’épreuve avant l’heure.</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3 feature">
+        <div>
+          <div class="icon-circle">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+          <h3>
+            <span>Compte rendu individualisé</span></h3>
+          <p>Tes points forts, tes points à peaufiner, reçois le débrief pour impressionner le jury le jour-J.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <div id="timeline" style="background-image: url('<%= image_path 'ffd-3.jpg'%>')" >
@@ -173,7 +193,7 @@ title: Oral HEC MyMentor
             <div class="day-circle"></div>
             <div class="day-desc">
               <p><strong>Petit-déjeuner MyMentor</strong><br />
-                L’occasion d’échanger et de se connaître autour d'une question: Quel est pour toi le plus grand orateur français ? </p>
+                L’occasion d’échanger et de se connaître autour d'une question: quel est pour toi le plus grand orateur français ? </p>
             </div>
             <div class="day-picture" style="background-image: url('<%= image_path 'ffd-3.jpg' %>');"></div>
           </div>
@@ -182,7 +202,7 @@ title: Oral HEC MyMentor
             <div class="day-circle"></div>
             <div class="day-desc">
               <p><strong>Rappels méthodologiques de l’entretien de personnalité</strong><br />
-                Les objectifs du jury, tes objectifs, les critères d’évaluation</p>
+                Les objectifs du jury à mettre en lien avec tes propres aspirations, les critères d’évaluation à maitriser.</p>
             </div>
             <div class="day-picture" style="background-image: url('<%= image_path 'ffd-2.jpg' %>');"></div>
           </div>
@@ -191,7 +211,7 @@ title: Oral HEC MyMentor
             <div class="day-circle"></div>
             <div class="day-desc">
               <p><strong>Fais une excellente 1<sup>ère</sup> impression</strong><br />
-                Mise en pratique : réalise une présentation de soi, oriente les questions du jury, prends le contrôle de l’entretien et démarque toi des autres candidats sous l’œil du jury</p>
+                Mise en pratique : réalise ta présentation, oriente les questions du jury, prends le contrôle de l’entretien et démarque-toi des autres candidats.</p>
             </div>
             <div class="day-picture" style="background-image: url('<%= image_path 'ffd-1.jpg' %>')"></div>
           </div>
@@ -217,7 +237,7 @@ title: Oral HEC MyMentor
             <div class="day-hour">12h30</div>
             <div class="day-circle"></div>
             <div class="day-desc">
-              <p><strong>Communiquer votre personnalité et vos connaissances avec enthousiasme</strong><br />
+              <p><strong>Communiquer ta personnalité et tes connaissances avec enthousiasme</strong><br />
                 Tes passions, tes qualités, tes défauts et tes connaissances sur l’actualité : réagis avec le groupe sur ces sujets.</p>
             </div>
             <div class="day-picture" style="background-image: url('<%= image_path 'ffd-4.jpg' %>')"></div>
@@ -227,7 +247,7 @@ title: Oral HEC MyMentor
             <div class="day-circle"></div>
             <div class="day-desc">
               <p><strong>La posture, les gestes, le regard, la voix</strong><br />
-                Mise en pratique les gestes à faire/éviter (10 mn) + mini groupes pour travailler la communication non verbale (20 mn)</p>
+                Mise en pratique des gestes à faire ou à éviter (10 mn) + mini groupes pour travailler la communication non verbale (20 mn)</p>
             </div>
             <div class="day-picture" style="background-image: url('<%= image_path 'ffd-1.jpg' %>')"></div>
           </div>
@@ -247,8 +267,8 @@ title: Oral HEC MyMentor
             <div class="day-hour">14h30</div>
             <div class="day-circle"></div>
             <div class="day-desc">
-              <p><strong>Structure de l’épreuve</strong><br />
-                Présentation, déroulé et recommandations techniques</p>
+              <p><strong>Structure de l’épreuve et pratiques conseillées</strong><br />
+                Présentation et rappels de l’épreuve d’économie, déroulé d’un sujet et recommandations techniques pour préparer l’épreuve.</p>
             </div>
             <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-16b.jpg' %>');"></div>
           </div>
@@ -266,7 +286,7 @@ title: Oral HEC MyMentor
             <div class="day-circle"></div>
             <div class="day-desc">
               <p><strong>Entraînement interactif sur des sujets potentiels</strong><br />
-                Analyse et traitement collaboratif de 3 sujets abordant des thématiques transverses au programme d’AEHSC (sur les deux années).</p>
+                Analyse et traitement collaboratif de 3 sujets abordant des thématiques transverses au programme d’AEHSC.</p>
             </div>
             <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-6b.jpg' %>')"></div>
           </div>
@@ -299,7 +319,42 @@ title: Oral HEC MyMentor
           return document.body.clientHeight;
         }
       };
-      // switch entre les 2 programmes
+      $('form [type="submit"]').on("click", function(e){
+        e.preventDefault();
+        var content = {};
+        var phone_val = $(this).parent('form').find('[name="phone"]').val();
+        var email_val = $(this).parent('form').find('[name="email"]').val();
+        var interest_val = $(this).parent('form').find('[name="interest"]').val();
+        if ( phone_val !== '') {
+          content['phone'] = phone_val;
+        }
+        if ( email_val !== '') {
+          content['email'] = email_val;
+        }
+        if (interest_val !== '') {
+          content['interest'] = interest_val;
+        }
+        if ( (content['phone'] || content['email'] ) && content['interest'] ) {
+          console.log('trigger AJAX');
+          $.ajax({
+            url: "https://formspree.io/contact@mymentor.fr",
+            method: "POST",
+            data: content,
+            dataType: "json",
+          }).done(function(){
+              content = {};
+              var text = $('<p><strong>Merci, vous allez être recontacté au plus vite</strong></p>').hide();
+              $('form [type="submit"]').replaceWith(text);
+              $('form p').fadeIn("slow");
+          });
+        } else {
+          alert('Champs manquants');
+        }
+
+      });
+
+
+      // switch display entre les 2 programmes
       $('.selector').on('click', 'a', function(e) {
         e.preventDefault();
         $('.selector a').removeClass("selected");
@@ -313,6 +368,7 @@ title: Oral HEC MyMentor
         }
       });
 
+      //switch entre les différents days
       $('.day').hover( function(){
         $(this).children('.day-hour').addClass('day-hour-hover');
         $(this).children('.day-desc').addClass('day-desc-hover');
@@ -325,6 +381,7 @@ title: Oral HEC MyMentor
         $('.day-desc').removeClass('day-desc-hover');
       });
 
+      //affichage du menu fixed bottom
       $(document).scroll(function () {
           var y = $(this).scrollTop();
           if (y > 400) {
