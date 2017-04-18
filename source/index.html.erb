@@ -21,6 +21,7 @@ title: Oral HEC MyMentor
           <option value="stage-oral">Stage oral de personnalité</option>
           <option value="full-stage">Les deux stages</option>
         </select>
+        <input type="text" name="_gotcha" style="display:none" />
       </div>
       <input type="submit" class="btn btn-lg btn-primary" value="Demande d'information">
     </form>
@@ -41,7 +42,8 @@ title: Oral HEC MyMentor
       <div class="content">
         <h1>Préparer HEC<br />en 2 demi-journées !</h1>
         <p>Un programme sur mesure en mini groupes de 10, cadrés par les jury des concours pour préparer vos oraux.</p>
-        <p>A vous de choisir votre préparation : entretien de personnalité, oral d’économie ou les deux avec nos professeurs stars !</p>
+        <p>Votre stage d’oral d’économie cadré avec Anna Souakri, jury et enseignante à ESCP Europe.</p>
+        <p>Votre stage d’oral de personnalité cadré par Adrien Rivierre, expert de la prise de parole.</p>
       </div>
     </div>
     <div class="col-xs-12 col-sm-4">
@@ -72,13 +74,13 @@ title: Oral HEC MyMentor
 <div id="offers">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-        <h2>Les jurys de l’épreuve te dédient la journée du 27 mai:</h2>
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <h2>Deux experts du concours HEC pour ton stage du 27 mai:</h2>
         <ul>
-          <li>Oral d’économie avec Anna Souakri, jury ESCP:
-              <strong>275€</strong><small>/demi-journée</small></li>
+          <li>Oral d’économie avec Anna Souakri :
+              <strong>275€</strong><small>/demi-journée</small> <small>(<a href="#timeline">voir le détail</a>)</small></li>
           <li>Entretien de personnalité avec Adrien Rivierre :
-              <strong>275€</strong><small>/demi-journée</small></li>
+              <strong>275€</strong><small>/demi-journée</small> <small>(<a href="#timeline")>voir le détail</a>)</small></li>
           <li>La journée complète pour assurer HEC :
               <del>550€</del> <strong>500€</strong><small>/journée</small></li>
         </ul>
@@ -317,7 +319,42 @@ title: Oral HEC MyMentor
           return document.body.clientHeight;
         }
       };
-      // switch entre les 2 programmes
+      $('form [type="submit"]').on("click", function(e){
+        e.preventDefault();
+        var content = {};
+        var phone_val = $(this).parent('form').find('[name="phone"]').val();
+        var email_val = $(this).parent('form').find('[name="email"]').val();
+        var interest_val = $(this).parent('form').find('[name="interest"]').val();
+        if ( phone_val !== '') {
+          content['phone'] = phone_val;
+        }
+        if ( email_val !== '') {
+          content['email'] = email_val;
+        }
+        if (interest_val !== '') {
+          content['interest'] = interest_val;
+        }
+        if ( (content['phone'] || content['email'] ) && content['interest'] ) {
+          console.log('trigger AJAX');
+          $.ajax({
+            url: "https://formspree.io/contact@mymentor.fr",
+            method: "POST",
+            data: content,
+            dataType: "json",
+          }).done(function(){
+              content = {};
+              var text = $('<p><strong>Merci, vous allez être recontacté au plus vite</strong></p>').hide();
+              $('form [type="submit"]').replaceWith(text);
+              $('form p').fadeIn("slow");
+          });
+        } else {
+          alert('Champs manquants');
+        }
+
+      });
+
+
+      // switch display entre les 2 programmes
       $('.selector').on('click', 'a', function(e) {
         e.preventDefault();
         $('.selector a').removeClass("selected");
@@ -331,6 +368,7 @@ title: Oral HEC MyMentor
         }
       });
 
+      //switch entre les différents days
       $('.day').hover( function(){
         $(this).children('.day-hour').addClass('day-hour-hover');
         $(this).children('.day-desc').addClass('day-desc-hover');
@@ -343,6 +381,7 @@ title: Oral HEC MyMentor
         $('.day-desc').removeClass('day-desc-hover');
       });
 
+      //affichage du menu fixed bottom
       $(document).scroll(function () {
           var y = $(this).scrollTop();
           if (y > 400) {

@@ -47,6 +47,9 @@ a:hover, a:active, a:focus {
 }
 .scroll-menu form {
   display: none;
+  p {
+    color: #fff;
+  }
 }
 .navbar-mobile .btn-signup {
   padding: 10px 20px;
@@ -130,11 +133,11 @@ a:hover, a:active, a:focus {
   padding: 40px 0;
   ul {
     font-size: 18px;
-    margin: 0 0 0 20px;
+    margin: auto;
     padding: 0;
     list-style-type: none;
     li {
-      line-height: 26px;
+      line-height: 30px;
     }
   }
 }
@@ -327,6 +330,18 @@ a:hover, a:active, a:focus {
   #banner form input[type=submit] {
     margin-top: 30px;
   }
+  #offers {
+    padding: 40px 0;
+    ul {
+      font-size: 18px;
+      margin: auto;
+      padding: 0;
+      list-style-type: none;
+      li {
+        line-height: 30px;
+      }
+    }
+  }
   #teachers {
     padding: 60px 0;
   }
@@ -348,7 +363,15 @@ a:hover, a:active, a:focus {
     align-items: flex-start;
   }
   #features {
-    padding: 30px 0;
+    padding: 15px 0 50px 0;
+    background-color: #F4F4F4;
+  }
+  #features h2 {
+    margin: 0 0 40px 0;
+  }
+  #features blockquote {
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
   #timeline {
     padding: 15px 0 80px 0;
@@ -404,17 +427,6 @@ a:hover, a:active, a:focus {
   #timeline .info a {
     color: #fff;
     font-weight: bold;
-  }
-  #features {
-    padding: 15px 0;
-    background-color: #F4F4F4;
-  }
-  #features h2 {
-    margin: 0 0 40px 0;
-  }
-  #features blockquote {
-    margin-top: 20px;
-    margin-bottom: 40px;
   }
   .day {
     margin-top: 0;
