@@ -39,7 +39,7 @@ title: Oral HEC MyMentor
   <div class="container">
     <div class="col-xs-12 col-sm-6 col-sm-offset-1">
       <div class="content">
-        <h1>Préparer HEC<br /> en 2 demi-journées !</h1>
+        <h1>Préparer HEC<br />en 2 demi-journées !</h1>
         <p>Un programme sur mesure en mini groupes de 10, cadrés par les jury des concours pour préparer vos oraux.</p>
         <p>A vous de choisir votre préparation : entretien de personnalité et d’économie avec nos 2 professeurs stars !</p>
       </div>
@@ -60,6 +60,7 @@ title: Oral HEC MyMentor
             <option value="stage-oral">Stage oral de personnalité</option>
             <option value="full-stage">Les deux stages</option>
           </select>
+          <input type="text" name="_gotcha" style="display:none" />
         </div>
         <input type="submit" class="btn btn-lg btn-primary btn-block" value="Demande d'information">
         <p>Vous pouvez appeler Tony Infantino<br /> le fondateur au <strong>06 99 98 75 44</strong></p>
@@ -107,9 +108,10 @@ title: Oral HEC MyMentor
         <div class="row">
           <div class="col-xs-12 col-sm-3 col-sm-offset-3 feature">
             <div>
-              <h3>
-                <span>Maitrise parfaite du programme</span>
-              </h3>
+              <div class="icon-circle">
+                <i class="fa fa-book" aria-hidden="true"></i>
+              </div>
+              <h3><span>Maitrise parfaite du programme</span></h3>
               <p>
                 Revue des notions fondamentales de l’oral en fonction de tes besoins.
               </p>
@@ -117,7 +119,11 @@ title: Oral HEC MyMentor
           </div>
           <div class="col-xs-12 col-sm-3 feature">
             <div>
-              <h3><span>Astuces et méthode par un membre du jury</span></h3>
+              <div class="icon-circle">
+                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+              </div>
+              <h3>
+                <span>Astuces et méthode par un membre du jury</span></h3>
               <p>
                 Retour d’expérience des 2 jurys sur les bonnes pratiques et les astuces pour surprendre le jury !
               </p>
@@ -125,14 +131,22 @@ title: Oral HEC MyMentor
           </div>
           <div class="col-xs-12 col-sm-3 col-sm-offset-3 feature">
             <div>
-            <h3><span>Apprentissage par la pratique</span></h3>
-            <p>3 sujets d’économie et 5 mises en pratique d’oral pour une maitrise complète de des épreuves</p>
+              <div class="icon-circle">
+                <i class="fa fa-commenting-o" aria-hidden="true"></i>
+              </div>
+              <h3>
+                <span>Apprentissage par la pratique</span></h3>
+              <p>3 sujets d’économie et 5 mises en pratique d’oral pour une maitrise complète de des épreuves</p>
             </div>
           </div>
           <div class="col-xs-12 col-sm-3 feature">
             <div>
-            <h3><span>Compte rendu individualisé</span></h3>
-            <p>Débrief sur tous les points à travailler pour t’assurer l’excellence à l’entretien.</p>
+              <div class="icon-circle">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </div>
+              <h3>
+                <span>Compte rendu individualisé</span></h3>
+              <p>Débrief sur tous les points à travailler pour t’assurer l’excellence à l’entretien.</p>
             </div>
           </div>
         </div>
@@ -140,17 +154,17 @@ title: Oral HEC MyMentor
     </div>
 
 
-    <div id="timeline" style="background-image: url('<%= image_path 'mymentor-17b.jpg'%>')" >
+    <div id="timeline" style="background-image: url('<%= image_path 'ffd-3.jpg'%>')" >
       <div class="timeline-container container">
-        <h2>Déroulement du stage du 27 Mai<br />
+        <h2 id="programme">Déroulement du stage du 27 Mai<br />
           <small><a href="https://maps.google.com/?q=5+Villa+du+Clos+de+Malevart,+75011+Paris" target="_blank">
             <i class="fa fa-map-o" aria-hidden="true"></i> 5 villa du clos de Malevart, Paris 11ème</a></small>
         </h2>
         <div class="stages">
           <ul class="selector">
-            <li><a href="#" class="btn btn-default selected" data-select="personnalite">
+            <li><a href="#programme" class="btn btn-default selected" data-select="personnalite">
                 Entretien de personnalité</a></li>
-            <li><a href="#" class="btn btn-default" data-select="economie">Oral d'économie</a></li>
+            <li><a href="#programme" class="btn btn-default" data-select="economie">Oral d'économie</a></li>
           </ul>
         </div>
         <div class="day-type" data-type="personnalite">
@@ -161,7 +175,7 @@ title: Oral HEC MyMentor
               <p><strong>Petit-déjeuner MyMentor</strong><br />
                 L’occasion d’échanger et de se connaître autour d'une question: Quel est pour toi le plus grand orateur français ? </p>
             </div>
-            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-16b.jpg' %>');"></div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'ffd-3.jpg' %>');"></div>
           </div>
           <div class="day">
             <div class="day-hour">10h00</div>
@@ -170,7 +184,7 @@ title: Oral HEC MyMentor
               <p><strong>Rappels méthodologiques de l’entretien de personnalité</strong><br />
                 Les objectifs du jury, tes objectifs, les critères d’évaluation</p>
             </div>
-            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-5b.jpg' %>');"></div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'ffd-2.jpg' %>');"></div>
           </div>
           <div class="day">
             <div class="day-hour">10h20</div>
@@ -179,7 +193,7 @@ title: Oral HEC MyMentor
               <p><strong>Fais une excellente 1<sup>ère</sup> impression</strong><br />
                 Mise en pratique : réalise une présentation de soi, oriente les questions du jury, prends le contrôle de l’entretien et démarque toi des autres candidats sous l’œil du jury</p>
             </div>
-            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-6b.jpg' %>')"></div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'ffd-1.jpg' %>')"></div>
           </div>
           <div class="day">
             <div class="day-hour">10h50</div>
@@ -188,7 +202,7 @@ title: Oral HEC MyMentor
               <p><strong>Convaincre, persuader et séduire le jury</strong><br />
                 Atelier interactif entre le formateur et toi pour apprendre à structurer ta réponse, illustrer tes propos, être crédible et créer un dialogue.</p>
             </div>
-            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-6b.jpg' %>')"></div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'ffd-1.jpg' %>')"></div>
           </div>
           <div class="day">
             <div class="day-hour">11h20</div>
@@ -197,7 +211,7 @@ title: Oral HEC MyMentor
               <p><strong>Savoir présenter son projet professionnel</strong><br />
                 Atelier interactif: pourquoi cette école te correspond, que feras-tu dans 10 ans, quel est ton projet professionnel ?</p>
             </div>
-            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-6b.jpg' %>')"></div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'ffd-1.jpg' %>')"></div>
           </div>
           <div class="day">
             <div class="day-hour">12h30</div>
@@ -206,7 +220,7 @@ title: Oral HEC MyMentor
               <p><strong>Communiquer votre personnalité et vos connaissances avec enthousiasme</strong><br />
                 Tes passions, tes qualités, tes défauts et tes connaissances sur l’actualité : réagis avec le groupe sur ces sujets.</p>
             </div>
-            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-6b.jpg' %>')"></div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'ffd-4.jpg' %>')"></div>
           </div>
           <div class="day">
             <div class="day-hour">13h00</div>
@@ -215,7 +229,7 @@ title: Oral HEC MyMentor
               <p><strong>La posture, les gestes, le regard, la voix</strong><br />
                 Mise en pratique les gestes à faire/éviter (10 mn) + mini groupes pour travailler la communication non verbale (20 mn)</p>
             </div>
-            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-6b.jpg' %>')"></div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'ffd-1.jpg' %>')"></div>
           </div>
           <div class="day">
             <div class="day-hour">FIN</div>
@@ -224,7 +238,7 @@ title: Oral HEC MyMentor
               <p><strong>Débrief personnalité pour ton succès au concours</strong><br />
                 Le formateur échange brièvement avec toi et tu reçois ton compte rendu par mail</p>
             </div>
-            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-6b.jpg' %>')"></div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'ffd-1.jpg' %>')"></div>
           </div>
         </div>
 
@@ -285,7 +299,7 @@ title: Oral HEC MyMentor
           return document.body.clientHeight;
         }
       };
-
+      // switch entre les 2 programmes
       $('.selector').on('click', 'a', function(e) {
         e.preventDefault();
         $('.selector a').removeClass("selected");
@@ -293,6 +307,10 @@ title: Oral HEC MyMentor
         var data = $(this).data("select");
         $(" [data-type] ").hide();
         $('[data-type="' + data + '"]').show();
+        if ($(document).innerWidth() > 768) {
+          var image = $('[data-type="' + data + '"] .day-picture').first().css("background-image");
+          $('#timeline').css("background-image", image)
+        }
       });
 
       $('.day').hover( function(){

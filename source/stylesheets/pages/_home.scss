@@ -94,11 +94,12 @@ a:hover, a:active, a:focus {
 #banner {
   background-size: cover;
   background-position: 51%;
-  padding: 30px 0;
+  padding: 10px 0 30px 0;
 }
 #banner h1 {
-  font-size: 22px;
+  font-size: 28px;
   margin: 0 0 10px 0;
+  text-align: center;
 }
 #banner .content {
   color: #fff;
@@ -164,20 +165,19 @@ a:hover, a:active, a:focus {
 
 #features {
   background-color: #FFF;
-  padding: 30px 0;
+  padding: 10px 0 30px 0;
 }
 #features h2 {
-  margin-top: 0px;
+  margin: 0px 0px 20px 0;
   text-align: center;
 }
 .feature {
   margin-bottom: 15px;
+  text-align: center;
 }
 .feature h3 {
   font-size: 18px;
-  display: flex;
-  margin-bottom: 15px;
-
+  margin: 10px 0;
 }
 .feature img {
   width: 40px;
@@ -301,9 +301,10 @@ a:hover, a:active, a:focus {
     font-size: 18px;
   }
   #banner h1 {
-    font-size: 40px;
+    font-size: 54px;
     margin: 10px 0 30px 0;
     font-weight: bold;
+    text-align: left;
   }
   #banner form {
     padding: 40px;
@@ -331,8 +332,11 @@ a:hover, a:active, a:focus {
     flex-direction: row;
     align-items: flex-start;
   }
+  #features {
+    padding: 30px 0;
+  }
   #timeline {
-    padding: 15px 0 60px 0;
+    padding: 15px 0 80px 0;
     position: relative;
     color: #fff;
     background-size: cover;
@@ -341,7 +345,7 @@ a:hover, a:active, a:focus {
     max-width: 800px;
     margin: auto;
     margin-left: 300px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: left;
     small a {
       color: rgba(255,255,255, 0.8);
@@ -352,6 +356,7 @@ a:hover, a:active, a:focus {
     max-width: 549px;
     width: 100%;
     margin: auto;
+    paddin-bottom: 10px;
     .selector {
       margin: 0;
       text-align: left;
