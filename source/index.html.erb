@@ -335,17 +335,27 @@ title: Oral HEC MyMentor
           content['interest'] = interest_val;
         }
         if ( (content['phone'] || content['email'] ) && content['interest'] ) {
-          console.log('trigger AJAX');
           $.ajax({
             url: "https://formspree.io/contact@mymentor.fr",
             method: "POST",
             data: content,
             dataType: "json",
-          }).done(function(){
-              content = {};
+            success: function(){
               var text = $('<p><strong>Merci, vous allez être recontacté au plus vite</strong></p>').hide();
               $('form [type="submit"]').replaceWith(text);
               $('form p').fadeIn("slow");
+              $('form .form-group').removeClass("has-error", 300);
+              $('form .error').remove();
+            },
+            error: function(){
+              var text = $('<p class="error"><strong>Certains champs sont manquants</strong></p>');
+              $('form').prepend(text);
+              $('form [name="email"], form [name="phone"]').closest(".form-group").addClass("has-error",300);
+            },
+            complete: function(){
+              content = {};
+              console.log(content);
+            },
           });
         } else {
           alert('Champs manquants');

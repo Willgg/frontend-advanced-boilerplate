@@ -18,6 +18,18 @@ blockquote {
   background-color: #4b74b9;
   color: #fff;
 }
+form p {
+  color: #fff;
+  text-align: center;
+}
+form p.error {
+  color: #c52522;
+}
+.has-error .form-control {
+  border-width: 2px;
+  border-color: #c52522;
+}
+
 .input-lg, .btn-lg {
   border-radius: 3px;
 }
@@ -117,10 +129,6 @@ a:hover, a:active, a:focus {
 }
 #banner form input[type=submit] {
   margin-top: 20px;
-}
-#banner form p {
-  color: #fff;
-  text-align: center;
 }
 #banner form p:last-child {
   margin: 10px 0 0 0;
@@ -302,13 +310,13 @@ a:hover, a:active, a:focus {
     align-items: center;
   }
   #logo {
-    margin-bottom: 15vh;
+    margin-bottom: 13vh;
   }
   .form-group {
     margin-bottom: 15px;
   }
   #banner {
-    height: 100vh;
+    min-height: 100vh;
     padding: 30px 0;
     padding-top: 10px;
     background-position: 0%;
