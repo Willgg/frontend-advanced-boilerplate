@@ -1,23 +1,46 @@
-<div id="banner">
-<h2>Deviens le Mentor d’étudiants<h2>
-<p>Partage tes connaissances lors de cours à domicile et génère des revenus significatifs selon ton emploi du temps.</p>
-<a href="#" class="btn btn-success">S'engager</a>
+<div id="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path 'mentor-relax.jpg' %>);">
+  <div id="logo">
+    <%= image_tag 'logo.png', alt: 'MyMentor' %>
+  </div>
+  <div class="content">
+    <h1>Deviens le Mentor d’étudiants</h1>
+    <p>Partage tes connaissances lors de cours à domicile et génère des revenus significatifs selon ton emploi du temps.</p>
+    <a href="#" class="btn btn-success">S'engager</a>
+  </div>
 </div>
 
 <div id="reasons-section">
-  <p>Nous permettons aux élèves de trouver leur Mentor idéal pour réussir leur études et démarrer leur vie active dans les meilleures conditions. Prêt à vous engager en tant que Mentor ?</p>
-  <p><strong>Un premier élève sous 1 semaine</strong><br />
-    Chaque jour, reçois des demandes qui correspondent à ton profil et ta zone d’enseignement.
-  </p>
-  <p><strong>Des revenus significatifs et personnalisés</strong><br />
-    Postule aux annonces en fixant ton tarif et gagne jusqu’à 1000€/mois
-  </p>
-  <p><strong>Un job impliquant qui a du sens</strong><br />
-    Point de livraison en vélo, ici tu permets à tes élèves de réussir leur scolarité et de progresser.
-  </p>
-  <p><strong>Des cours en toute sérénité</strong><br />
-    Toutes nos demandes sont vérifiées et MyMentor est garant de tes paiements.
-  </p>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <p>Nous permettons aux élèves de trouver leur Mentor idéal pour réussir leur études et démarrer leur vie active dans les meilleures conditions. Prêt à vous engager en tant que Mentor ?</p>
+      </div>
+      <div class="col-xs-12 text-center">
+        <%= image_tag 'fast.png' %>
+        <p><strong>Un premier élève sous 1 semaine</strong><br />
+          Chaque jour, reçois des demandes qui correspondent à ton profil et ta zone d’enseignement.
+        </p>
+      </div>
+      <div class="col-xs-12 text-center">
+        <%= image_tag 'earnings.png' %>
+        <p><strong>Des revenus significatifs et personnalisés</strong><br />
+          Postule aux annonces en fixant ton tarif et gagne jusqu’à 1000€/mois
+        </p>
+      </div>
+      <div class="col-xs-12 text-center">
+        <%= image_tag 'angel.png' %>
+        <p><strong>Un job impliquant qui a du sens</strong><br />
+          Point de livraison en vélo, ici tu permets à tes élèves de réussir leur scolarité et de progresser.
+        </p>
+      </div>
+      <div class="col-xs-12 text-center">
+        <%= image_tag 'verif-id.png' %>
+        <p><strong>Des cours en toute sérénité</strong><br />
+          Toutes nos demandes sont vérifiées et MyMentor est garant de tes paiements.
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div id="requests">

@@ -1,0 +1,98 @@
+body {
+  font-size: 15px;
+/*  font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #777;
+}
+h2 {
+  font-size: 32px;
+  margin-top: 0px;
+}
+blockquote {
+  height: 95px;
+  padding: 15px;
+  margin: 0;
+  font-size: 15px;
+  border-left: 0;
+  background-color: #4b74b9;
+  color: #fff;
+}
+a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+#logo {
+  margin: auto;
+  margin-bottom: 15px;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+#logo img {
+  width: 50px;
+}
+#banner {
+  background-size: cover;
+  background-position: 51%;
+  height: 100vh;
+  padding: 10px;
+  text-align: center;
+}
+#banner h1 {
+  font-size: 28px;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+#banner .content {
+  color: #fff;
+  margin: 50px 0 20px 0;
+}
+#banner .content p a {
+  font-size: 20px;
+}
+#reasons-section {
+  padding: 10px;
+  img {
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-mobile {
+    display: none;
+  }
+  #logo {
+    margin-bottom: 13vh;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  #banner {
+    min-height: 100vh;
+    padding: 30px 0;
+    padding-top: 10px;
+    background-position: 0%;
+  }
+  #banner .content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  #banner h1 {
+    font-size: 54px;
+    margin: 10px 0 30px 0;
+    font-weight: bold;
+    text-align: left;
+  }
+  #banner form {
+    padding: 40px;
+  }
+  #banner form input[type=submit] {
+    margin-top: 30px;
+  }
+}
