@@ -1,0 +1,417 @@
+---
+title: Oral HEC MyMentor
+---
+
+<div class="scroll-menu">
+  <div class="container text-center">
+    <form action="https://formspree.io/contact@mymentor.fr" method="post" class="form-inline">
+      <div class="form-group">
+        <label class="sr-only" for="phone">Téléphone</label>
+        <input type="text" class="form-control input-lg" name="phone" placeholder="n° téléphone">
+      </div>
+      <span>ou</span>
+      <div class="form-group">
+        <label class="sr-only" for="email">Email</label>
+        <input type="text" class="form-control input-lg" name="email" placeholder="adresse@email.com">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="interest">Interessé par</label>
+        <select name="interest" class="form-control input-lg">
+          <option value="stage-eco">Stage d'économie</option>
+          <option value="stage-oral">Stage oral de personnalité</option>
+          <option value="full-stage">Les deux stages</option>
+        </select>
+        <input type="text" name="_gotcha" style="display:none" />
+      </div>
+      <input type="submit" class="btn btn-lg btn-primary" value="Demande d'information">
+    </form>
+    <div class="navbar-mobile">
+      <div id="logo"><%= image_tag 'logo.png', alt: 'MyMentor' %></div>
+      <a href="#form" class="btn-signup">S'inscrire</a>
+    </div>
+  </div>
+</div>
+
+<div id="banner" style="background-image: url(<%= image_path 'mymentor-11b.jpg' %>);">
+  <div id="logo">
+    <%= image_tag 'logo.png', alt: 'MyMentor' %>
+  </div>
+
+  <div class="container">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+      <div class="content">
+        <h1>Préparer HEC<br />en 2 demi-journées !</h1>
+        <p>Un programme sur mesure en mini groupes de 10, cadrés par les jury des concours pour préparer vos oraux.</p>
+        <p>Votre stage d’oral d’économie cadré avec Anna Souakri, jury et enseignante à ESCP Europe.</p>
+        <p>Votre stage d’oral de personnalité cadré par Adrien Rivierre, expert de la prise de parole.</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <form action="https://formspree.io/contact@mymentor.fr" method="post" id="form">
+        <div class="form-group">
+          <input type="text" class="form-control input-lg" name="phone" placeholder="n° téléphone">
+        </div>
+        <p>ou</p>
+        <div class="form-group">
+          <input type="text" class="form-control input-lg" name="email" placeholder="you@mail.com">
+        </div>
+        <p>Me recontacter pour :</p>
+        <div class="form-group">
+          <select name="interest" class="form-control input-lg">
+            <option value="stage-eco">Stage d'économie</option>
+            <option value="stage-oral">Stage oral de personnalité</option>
+            <option value="full-stage">Les deux stages</option>
+          </select>
+          <input type="text" name="_gotcha" style="display:none" />
+        </div>
+        <input type="submit" class="btn btn-lg btn-primary btn-block" value="Demande d'information">
+        <p>Vous pouvez appeler Tony Infantino<br /> le fondateur au <strong>06 99 98 75 44</strong></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="offers">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <h2>Deux experts du concours HEC pour ton stage du 27 mai:</h2>
+        <ul>
+          <li>Oral d’économie avec Anna Souakri :
+              <strong>275€</strong><small>/demi-journée</small> <small>(<a href="#timeline">voir le détail</a>)</small></li>
+          <li>Entretien de personnalité avec Adrien Rivierre :
+              <strong>275€</strong><small>/demi-journée</small> <small>(<a href="#timeline")>voir le détail</a>)</small></li>
+          <li>La journée complète pour assurer HEC :
+              <del>550€</del> <strong>500€</strong><small>/journée</small></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="teachers">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="teacher">
+          <%= image_tag 'anna-souakri.jpg', alt: 'Anna Souakri', class: 'avatar-large' %>
+          <div class="content">
+            <p><a href="https://fr.linkedin.com/in/annasouakri" title="Profile linkedin" target="_blank"><strong>Anna Souakri</strong> - <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a></p>
+            <p>&laquo; Membre du jury d’admission des épreuves orales de l’ESCP et enseignante en stratégie dans cette même école, je vous apporterai au cours du stage mon expertise afin de maximiser vos chances de réussir brillamment à l’oral.</p>
+            <p>Au cours de ce stage, j’ambitionne, dans un format très interactif, de vous faire acquérir les bonnes pratiques et de vous motiver afin d’épater le jury ! &raquo;<p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12">
+        <div class="teacher">
+          <%= image_tag 'adrien-rivierre.jpg', alt: 'Adrien Rivierre', class: 'avatar-large' %>
+          <div class="content">
+            <p><a href="https://www.linkedin.com/in/adrienrivierre/" title="Profile linkedin Adrien Rivierre" target="_blank"><strong>Adrien Rivierre</strong> - <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a></p>
+            <p>&laquo; Directeur de la communication au sein de General Electric Digital Europe depuis plus d’un an, contributeur au journal Les Echos, j’ai auparavant été plume de Clara Gaymard alors PDG de General Electric en France.</p>
+            <p>Ce stage très interactif, structuré autour d’exercices pratiques, vise à vous donner toutes les techniques pour convaincre les jurys d’école et vous démarquer des autres candidats. &raquo;<p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+         <h2>Pourquoi passer par MyMentor ?</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-3 col-sm-offset-3 feature">
+        <div>
+          <div class="icon-circle">
+            <i class="fa fa-book" aria-hidden="true"></i>
+          </div>
+          <h3><span>Maitrise parfaite du programme</span></h3>
+          <p>
+            Revue des notions fondamentales de l’oral en fonction de tes besoins.
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3 feature">
+        <div>
+          <div class="icon-circle">
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+          </div>
+          <h3>
+            <span>Astuces et méthode par un membre du jury</span></h3>
+          <p>
+            Retour d’expérience sur les bonnes pratiques et les astuces pour surprendre le jury !
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3 col-sm-offset-3 feature">
+        <div>
+          <div class="icon-circle">
+            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+          </div>
+          <h3>
+            <span>Apprentissage par la pratique</span></h3>
+          <p>3 sujets d’économie, 5 exercices de personnalité pour vivre l’épreuve avant l’heure.</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3 feature">
+        <div>
+          <div class="icon-circle">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+          <h3>
+            <span>Compte rendu individualisé</span></h3>
+          <p>Tes points forts, tes points à peaufiner, reçois le débrief pour impressionner le jury le jour-J.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div id="timeline" style="background-image: url('<%= image_path 'ffd-3.jpg'%>')" >
+      <div class="timeline-container container">
+        <h2 id="programme">Déroulement du stage du 27 Mai<br />
+          <small><a href="https://maps.google.com/?q=5+Villa+du+Clos+de+Malevart,+75011+Paris" target="_blank">
+            <i class="fa fa-map-o" aria-hidden="true"></i> 5 villa du clos de Malevart, Paris 11ème</a></small>
+        </h2>
+        <div class="stages">
+          <ul class="selector">
+            <li><a href="#programme" class="btn btn-default selected" data-select="personnalite">
+                Entretien de personnalité</a></li>
+            <li><a href="#programme" class="btn btn-default" data-select="economie">Oral d'économie</a></li>
+          </ul>
+        </div>
+        <div class="day-type" data-type="personnalite">
+          <div class="day">
+            <div class="day-hour">9h30</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>Petit-déjeuner MyMentor</strong><br />
+                L’occasion d’échanger et de se connaître autour d'une question: quel est pour toi le plus grand orateur français ? </p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'ffd-3.jpg' %>');"></div>
+          </div>
+          <div class="day">
+            <div class="day-hour">10h00</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>Rappels méthodologiques de l’entretien de personnalité</strong><br />
+                Les objectifs du jury à mettre en lien avec tes propres aspirations, les critères d’évaluation à maitriser.</p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'ffd-2.jpg' %>');"></div>
+          </div>
+          <div class="day">
+            <div class="day-hour">10h20</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>Fais une excellente 1<sup>ère</sup> impression</strong><br />
+                Mise en pratique : réalise ta présentation, oriente les questions du jury, prends le contrôle de l’entretien et démarque-toi des autres candidats.</p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'ffd-1.jpg' %>')"></div>
+          </div>
+          <div class="day">
+            <div class="day-hour">10h50</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>Convaincre, persuader et séduire le jury</strong><br />
+                Atelier interactif entre le formateur et toi pour apprendre à structurer ta réponse, illustrer tes propos, être crédible et créer un dialogue.</p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'ffd-1.jpg' %>')"></div>
+          </div>
+          <div class="day">
+            <div class="day-hour">11h20</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>Savoir présenter son projet professionnel</strong><br />
+                Atelier interactif: pourquoi cette école te correspond, que feras-tu dans 10 ans, quel est ton projet professionnel ?</p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'ffd-1.jpg' %>')"></div>
+          </div>
+          <div class="day">
+            <div class="day-hour">12h30</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>Communiquer ta personnalité et tes connaissances avec enthousiasme</strong><br />
+                Tes passions, tes qualités, tes défauts et tes connaissances sur l’actualité : réagis avec le groupe sur ces sujets.</p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'ffd-4.jpg' %>')"></div>
+          </div>
+          <div class="day">
+            <div class="day-hour">13h00</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>La posture, les gestes, le regard, la voix</strong><br />
+                Mise en pratique des gestes à faire ou à éviter (10 mn) + mini groupes pour travailler la communication non verbale (20 mn)</p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'ffd-1.jpg' %>')"></div>
+          </div>
+          <div class="day">
+            <div class="day-hour">FIN</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>Débrief personnalité pour ton succès au concours</strong><br />
+                Le formateur échange brièvement avec toi et tu reçois ton compte rendu par mail</p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'ffd-1.jpg' %>')"></div>
+          </div>
+        </div>
+
+        <div class="day-type" data-type="economie" style="display: none">
+          <div class="day">
+            <div class="day-hour">14h30</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>Structure de l’épreuve et pratiques conseillées</strong><br />
+                Présentation et rappels de l’épreuve d’économie, déroulé d’un sujet et recommandations techniques pour préparer l’épreuve.</p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-16b.jpg' %>');"></div>
+          </div>
+          <div class="day">
+            <div class="day-hour">14h45</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>Travail sur les concepts fondamentaux</strong><br />
+                Rappels sur les éléments clés de micro et de macroéconomie et approfondissement en fonction des besoins du groupe.</p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-5b.jpg' %>');"></div>
+          </div>
+          <div class="day">
+            <div class="day-hour">16h</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>Entraînement interactif sur des sujets potentiels</strong><br />
+                Analyse et traitement collaboratif de 3 sujets abordant des thématiques transverses au programme d’AEHSC.</p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-6b.jpg' %>')"></div>
+          </div>
+          <div class="day">
+            <div class="day-hour">17h30</div>
+            <div class="day-circle"></div>
+            <div class="day-desc">
+              <p><strong>Quizz et Questions réponses</strong><br />
+                Quizz sur les notions à maîtriser le jour J (15 min) puis correction et échanges.
+              </p>
+            </div>
+            <div class="day-picture" style="background-image: url('<%= image_path 'mymentor-7b.jpg' %>')"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="footer"></div> -->
+
+    <script>
+    $(document).ready( function(){
+
+      function getHeight() {
+        if (self.innerHeight) {
+          return self.innerHeight;
+        }
+        if (document.documentElement && document.documentElement.clientHeight) {
+          return document.documentElement.clientHeight;
+        }
+        if (document.body) {
+          return document.body.clientHeight;
+        }
+      };
+      $('form [type="submit"]').on("click", function(e){
+        e.preventDefault();
+        var content = {};
+        var phone_val = $(this).parent('form').find('[name="phone"]').val();
+        var email_val = $(this).parent('form').find('[name="email"]').val();
+        var interest_val = $(this).parent('form').find('[name="interest"]').val();
+        if ( phone_val !== '') {
+          content['phone'] = phone_val;
+        }
+        if ( email_val !== '') {
+          content['email'] = email_val;
+        }
+        if (interest_val !== '') {
+          content['interest'] = interest_val;
+        }
+        if ( (content['phone'] || content['email'] ) && content['interest'] ) {
+          $.ajax({
+            url: "https://formspree.io/contact@mymentor.fr",
+            method: "POST",
+            data: content,
+            dataType: "json",
+            success: function(){
+              var text = $('<p><strong>Merci, vous allez être recontacté au plus vite</strong></p>').hide();
+              $('form [type="submit"]').replaceWith(text);
+              $('form p').fadeIn("slow");
+              $('form .form-group').removeClass("has-error", 300);
+              $('form .error').remove();
+            },
+            error: function(){
+              var text = $('<p class="error"><strong>Certains champs sont manquants</strong></p>');
+              $('form').prepend(text);
+              $('form [name="email"], form [name="phone"]').closest(".form-group").addClass("has-error",300);
+            },
+            complete: function(){
+              content = {};
+              console.log(content);
+            },
+          });
+        } else {
+          alert('Champs manquants');
+        }
+
+      });
+
+
+      // switch display entre les 2 programmes
+      $('.selector').on('click', 'a', function(e) {
+        e.preventDefault();
+        $('.selector a').removeClass("selected");
+        $(this).addClass("selected");
+        var data = $(this).data("select");
+        $(" [data-type] ").hide();
+        $('[data-type="' + data + '"]').show();
+        if ($(document).innerWidth() > 768) {
+          var image = $('[data-type="' + data + '"] .day-picture').first().css("background-image");
+          $('#timeline').css("background-image", image)
+        }
+      });
+
+      //switch entre les différents days
+      $('.day').hover( function(){
+        $(this).children('.day-hour').addClass('day-hour-hover');
+        $(this).children('.day-desc').addClass('day-desc-hover');
+        if ($(document).innerWidth() > 768) {
+          var pic = $(this).children('.day-picture').css('background-image');
+          $('#timeline').css('background-image', pic);
+        }
+      }, function() {
+        $('.day-hour').removeClass('day-hour-hover');
+        $('.day-desc').removeClass('day-desc-hover');
+      });
+
+      //affichage du menu fixed bottom
+      $(document).scroll(function () {
+          var y = $(this).scrollTop();
+          if (y > 400) {
+              $('.scroll-menu').fadeIn();
+          } else {
+              $('.scroll-menu').fadeOut();
+          }
+      });
+
+      if ($(document).innerWidth() <= 768) {
+        $('#timeline').removeAttr('style');
+      }
+
+    });
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-92948578-1', 'auto');
+    ga('send', 'pageview');
+    </script>
