@@ -112,7 +112,7 @@ a:hover, a:active, a:focus {
 #setup {
   background-color: #257298;
   color: #fff;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -139,7 +139,7 @@ a:hover, a:active, a:focus {
     p {
       margin: auto;
       width: 66%;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
     .btn {
       font-weight: 500;
@@ -149,7 +149,7 @@ a:hover, a:active, a:focus {
   }
   #banner h1 {
     font-size: 50px;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 0 0;
     font-weight: bold;
   }
   #banner form {

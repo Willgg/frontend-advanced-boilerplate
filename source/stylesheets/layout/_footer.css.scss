@@ -1,0 +1,36 @@
+.footer {
+  background-color: #2b363f;
+  background-position: 1000px;
+  background-repeat: no-repeat;
+  padding: 40px 20px 10px 20px;
+  a {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}
+.footer-col-title {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.4);
+  padding-bottom: 10px;
+}
+.footer-legal-info {
+  margin-top: 15px;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    background-repeat: no-repeat;
+    background-position: 1% 34%;
+    background-size: 26%;
+    ul {
+      padding-left: 40px;
+    }
+  }
+  .footer-legal-info {
+    text-align: center;
+  }
+}
